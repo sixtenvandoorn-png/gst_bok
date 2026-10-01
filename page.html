@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Gästbok</title>
+</head>
+<body>
+  <h1>Gästbok</h1>
+  <form action="/save" method="post">
+    <input type="text" name="name" placeholder="Namn" required>
+    <textarea name="message" placeholder="Meddelande" required></textarea>
+    <button type="submit">Skicka</button>
+  </form>
+  <h2>Inlägg</h2>
+  {{entries}}
+</body>
+</html>
